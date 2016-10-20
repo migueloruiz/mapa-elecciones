@@ -1,0 +1,45 @@
+body { margin: 0; padding: 0; }
+
+*:focus { outline: none; }
+
+#mapa-elecciones { width: 100%; height: 92%; min-width: 300px; min-height: 200px; }
+
+#map-info-container { width: 100%; height: 100%; }
+#map-info-container h1 { width: 100%; margin: 5px 0; text-align: center; font-size: 18px; font-weight: bold; text-transform: uppercase; color: #333; }
+#map-info-container p { color: #333; text-align: left; }
+#map-info-container p span { margin: 0 3px; float: right; font-weight: bold; }
+#map-info-container p:nth-child(2) span { color: #335F9A; }
+#map-info-container p:last-child span { color: #D7372F; }
+
+#map-info-container.dem h1 { color: #335F9A; }
+
+#map-info-container.rep h1 { color: #D7372F; }
+
+.counter-elecciones { width: 100%; height: 8%; background: #1e242c; display: flex; justify-content: center; align-items: center; }
+.counter-elecciones button { box-sizing: border-box; display: flex; align-items: center; justify-content: center; margin: 5px 20px; padding: 5px 10px; min-height: 40px; min-width: 100px; border-radius: 30px; border: solid #fff 1px; background: rgba(30, 36, 44, 0.6); float: left; color: #fff; text-align: left; font-size: 14px; line-height: 1; font-family: "Montserrat", "Helvetica", "Open Sans"; transition: all 0.2s; }
+.counter-elecciones button.active { border-width: 2px; transition: all 0.2; }
+.counter-elecciones button.active:nth-child(1) { background: #335F9A; }
+.counter-elecciones button.active:nth-child(2) { background: #3D88BB; }
+.counter-elecciones button.active:nth-child(3) { background: #FFF3D0; color: #333; }
+.counter-elecciones button.active:nth-child(4) { background: #FC6258; }
+.counter-elecciones button.active:nth-child(5) { background: #D7372F; }
+
+a[href^="http://maps.google.com/maps"] { display: none !important; }
+
+a[href^="https://maps.google.com/maps"] { display: none !important; }
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc { display: none; }
+
+.gmnoprint div { background: none !important; }
+
+.mapa-elecciones { box-sizing: border-box; width: 100%; height: 30vh; min-width: 300px; min-height: 400px; margin: 20px 0; }
+.mapa-elecciones .counter-elecciones button { padding: 2.5px; width: 33.333%; }
+.mapa-elecciones .counter-elecciones button:nth-child(2) { display: none; }
+.mapa-elecciones .counter-elecciones button:nth-child(4) { display: none; }
+
+@media screen and (min-width: 100px) and (max-width: 599px) { .counter-elecciones { height: 10%; }
+  .counter-elecciones button { width: 33.4%; font-size: 14px; line-height: 1; }
+  .counter-elecciones button:nth-child(2) { display: none; }
+  .counter-elecciones button:nth-child(4) { display: none; }
+  .mapa-elecciones { min-height: 250px; max-height: 250px; }
+  .mapa-elecciones #mapa-elecciones { height: 90%; } }

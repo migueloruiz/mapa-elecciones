@@ -1,0 +1,28 @@
+html
+	meta(charset='utf-8')
+	title Mapa Interactivo de elecciones
+	meta(name='description', content='')
+	meta(name='viewport', content='width=device-width, initial-scale=1')
+	meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+	meta(name='robots', content='INDEX, FOLLOW')
+
+	link( href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet")
+	link(rel='stylesheet', href='css/map.css')
+
+	body
+		div(style=" width: 100%; height: 100%;")
+			.counter-elecciones
+				button#color-0 Clinton
+				button#color-1 Tendencia Clinton
+				button#color-2 No decidido
+				button#color-3 Tendencia Trump
+				button#color-4 Trump
+			#mapa-elecciones
+		
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+		script.
+			if (!window.jQuery) { document.write('<script src="js/jquery-1.8.3.min.js"><\/script>'); }
+		script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDomk2vz2UiyFZNxaW80hOueCie6qgIed8&language=es')
+		script(type='text/javascript', src='/js/scripts.min.js')
+
+			

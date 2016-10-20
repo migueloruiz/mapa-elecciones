@@ -1,0 +1,101 @@
+head
+	meta(charset='utf-8')
+	title Uno TV | Noticias
+	meta(name='description', content='')
+	meta(name='viewport', content='width=device-width, initial-scale=1')
+	meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+	meta(name='robots', content='INDEX, FOLLOW')
+
+	link(type='text/plain', rel='author', href='/humans.txt')
+	// = Styles
+	// ==============
+	style(type='text/css').
+		body { opacity: 0; }
+		
+
+	// = Favicon
+	// ==============
+	link(rel='shortcut icon', href='favicon.png')
+
+	// = Ad Server
+	// ==============
+	script.
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+		(function() {
+			var gads = document.createElement('script');
+			gads.async = true;
+			gads.type = 'text/javascript';
+			var useSSL = 'https:' == document.location.protocol;
+			gads.src = (useSSL ? 'https:' : 'http:') + 
+			'//www.googletagservices.com/tag/js/gpt.js';
+			var node = document.getElementsByTagName('script')[0];
+			node.parentNode.insertBefore(gads, node);
+		})();
+
+	// Ad SizeMapping
+	//================
+	
+	script.
+		googletag.cmd.push(function() {
+			var mapLeader = googletag.sizeMapping().
+				addSize([0, 400], [320, 50]).
+				addSize([748, 200], [728, 90]).
+				build();
+
+			var mapAnchor= googletag.sizeMapping().
+				addSize([0, 400], [320, 50]).
+				addSize([748, 200], [728, 90]).
+				build();
+
+			var mapBillboard = googletag.sizeMapping().
+				addSize([1000, 500], [1000, 150]).
+				build();
+
+			var mapCarso = googletag.sizeMapping().
+				addSize([1000, 500], [250, 176]).
+				build();
+
+			var mapPleca= googletag.sizeMapping().
+				addSize([0, 400], [300, 100]).
+				addSize([1000, 200], [250, 470]).
+				build();
+
+			window.slot01 = googletag.defineSlot('/8602065/prueba_responsive_unotv_01', [[320, 100], [300, 250], [300, 600], [320, 50]], 'div-gpt-ad-1441245965219-0').addService(googletag.pubads());
+			window.slot02 = googletag.defineSlot('/8602065/prueba_responsive_unotv_02', [[320, 100], [300, 250], [300, 600], [320, 50]], 'div-gpt-ad-1441245965219-1').addService(googletag.pubads());
+			window.slot03 = googletag.defineSlot('/8602065/prueba_responsive_unotv_03', [[320, 100], [300, 250], [300, 600], [320, 50]], 'div-gpt-ad-1441245965219-2').addService(googletag.pubads());
+			window.slot04 = googletag.defineSlot('/8602065/prueba_responsive_unotv_04', [[320, 100], [300, 250], [300, 600], [320, 50]], 'div-gpt-ad-1441245965219-3').addService(googletag.pubads());
+			window.slot05 = googletag.defineSlot('/8602065/prueba_responsive_unotv_05', [[320, 100], [300, 250], [300, 600], [320, 50]], 'div-gpt-ad-1441245965219-4').addService(googletag.pubads());
+			window.slot06 = googletag.defineSlot('/8602065/prueba_responsive_unotv_06', [[320, 100], [300, 250], [300, 600], [320, 50]], 'div-gpt-ad-1441245965219-5').addService(googletag.pubads());
+			window.slot07 = googletag.defineSlot('/8602065/prueba_responsive_unotv_07', [[320, 100], [300, 250], [300, 600], [320, 50]], 'div-gpt-ad-1441245965219-6').addService(googletag.pubads());
+			window.slot08 = googletag.defineSlot('/8602065/prueba_responsive_unotv_08', [[320, 100], [300, 250], [300, 600], [320, 50]], 'div-gpt-ad-1441245965219-7').addService(googletag.pubads());
+			window.slot09 = googletag.defineSlot('/8602065/prueba_responsive_unotv_09', [[320, 100], [300, 250], [300, 600], [320, 50]], 'div-gpt-ad-1441245965219-8').addService(googletag.pubads());
+			window.slot10 = googletag.defineSlot('/8602065/prueba_responsive_unotv_10', [[320, 100], [300, 250], [300, 600], [320, 50]], 'div-gpt-ad-1441245965219-9').addService(googletag.pubads());
+
+			window.slotPleca = googletag.defineSlot('/8602065/UnoTV_Noticias_Portal_EventosEspeciales_Pleca_Informativa', [[250, 470], [300, 100]], 'div-pleca-informativa').
+				defineSizeMapping(mapPleca).addService(googletag.pubads());
+			
+			window.slotLeader = googletag.defineSlot('/8602065/prueba_responsive_unotv_leaderboard', [[320, 50], [728, 90]], 'div-gpt-ad-1441245965219-12').
+				defineSizeMapping(mapLeader).addService(googletag.pubads());
+			
+			window.slotAnchor = googletag.defineSlot('/8602065/prueba_responsive_unotv_anchor', [[320, 50], [728, 90]], 'div-gpt-ad-1441245965219-10').
+				defineSizeMapping(mapAnchor).addService(googletag.pubads());
+			
+			window.slotCarso = googletag.defineSlot('/8602065/prueba_responsive_unotv_carso', [[320, 50], [728, 90]], 'div-gpt-ad-1442007326719-0').
+				defineSizeMapping(mapCarso).addService(googletag.pubads());
+
+			window.slotBillboard = googletag.defineSlot('/8602065/prueba_responsive_unotv_billboard', [1000, 50], 'div-gpt-ad-1441245965219-11').
+				defineSizeMapping(mapBillboard).addService(googletag.pubads());
+
+			window.slotSkin = googletag.defineSlot('/8602065/prueba_responsive_unotv_skin', [1, 1], 'div-gpt-ad-1441065347908-0').addService(googletag.pubads());
+			window.slotSkinOOP = googletag.defineOutOfPageSlot('/8602065/prueba_responsive_unotv_skin', 'div-gpt-ad-1441065347908-0-oop').addService(googletag.pubads());
+
+			googletag.pubads().collapseEmptyDivs(true);
+			googletag.pubads().enableSingleRequest();
+			googletag.enableServices();
+		});
+
+
+
+
+		
