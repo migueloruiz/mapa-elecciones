@@ -54,33 +54,34 @@
 			statePoligon.data = poligonItem.data
 
 			google.maps.event.addListener(statePoligon,"click",function(){
-					this.setOptions({
-						fillColor: generalColor,
-						strokeColor: generalColor,
-						fillOpacity: 1
-					});
-					var vertices = this.getPath();
-					var bounds = new google.maps.LatLngBounds()
-					this.getPath().forEach(function(element,index){
-						bounds.extend(element)
-					})
 
-					var classinfo = 'style=" color:'+this.color+'; "'
+					if (this.fillColor != generalColor) {
+						this.setOptions({
+							fillColor: generalColor,
+							strokeColor: generalColor,
+							fillOpacity: 1
+						});
+					}else{
+						var bounds = new google.maps.LatLngBounds()
+						this.getPath().forEach(function(element,index){
+							bounds.extend(element)
+						})
 
-					var contentString = '<div id="map-info-container">';
-					contentString += '<h1>'+this.name+'</h1>';
-					contentString += '<ul>';
-					this.data.forEach(function(Item) {
-						contentString += '<li>'+ Item+'</li>';
-					});
-					contentString += '<ul></div>';
-					var centerState = bounds.getCenter();
-					infoWindow.setContent(contentString);
-					infoWindow.setPosition(centerState);
-					infoWindow.open(map);
-					map.setZoom(5);
-					map.panTo(centerState);
-
+						var contentString = '<div id="map-info-container">';
+						contentString += '<ul>';
+						contentString += '<h1>'+this.name+'</h1>';
+						this.data.forEach(function(Item, i) {
+							var styleElement = ( i == 0 || i == 1 ) ? 'class="element" style="background-color: '+ generalColor +';"' : "" ;
+							contentString += '<li '+ styleElement +'>'+ Item+'</li>';
+						});
+						contentString += '<ul></div>';
+						var centerState = bounds.getCenter();
+						infoWindow.setContent(contentString);
+						infoWindow.setPosition(centerState);
+						infoWindow.open(map);
+						map.setZoom(5);
+						map.panTo(centerState);
+					}
 			});
 
 			google.maps.event.addListener(statePoligon,"mouseout",function(){

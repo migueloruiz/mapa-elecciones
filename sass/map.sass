@@ -1,7 +1,7 @@
 // ==============================
 // Mapara eleciones EU 2016
 // ==============================
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono')
 //
 // colores de partidos
 // -------------------------------------------
@@ -13,13 +13,14 @@ $casirepublicans: #FC6258
 $republicans: #D7372F
 $fondo: rgb(30, 36, 44)
 
+*
+	font-family: 'Montserrat', 'Helvetica', 'Open Sans'
+	&:focus
+	outline: none
+
 body
 	margin: 0
 	padding: 0
-
-*:focus
-	outline: none
-
 
 //
 // Mapa
@@ -33,31 +34,57 @@ body
 //
 // Estilos de Info Windows
 // -------------------------------------------
-#map-info-container
-	width: 100%
-	height: 100%
-	h1
-		width: 100%
-		margin: 5px 0
-		text-align: center
-		font-size: 18px
-		font-weight: bold
-		text-transform: uppercase
-		color: #333
-	p
-		color: #333
-		text-align: left
-		span
-			margin: 0 3px
-			float: right
-			font-weight: bold
-		&:nth-child(2)
-			span
-				color: $democrats
-		&:last-child
-			span
-				color: $republicans
 
+.gmnoprint a, .gmnoprint span, .gm-style-cc
+	display: none
+
+.gmnoprint div
+	background: none !important
+
+// info window
+
+.gm-style-iw
+	width: 100% !important
+	height: 250px
+	min-height: 100px
+	top: 0px !important
+	left: 0px !important
+	bottom: 0px !important
+	right: 0px !important
+	// background: red
+		div
+			width: 100% !important
+			max-width: 100%
+			div
+				width: 100% !important
+				max-width: 100%
+
+#map-info-container
+	width: 300px
+	height: 300px
+	min-height: 200px
+	ul
+		h1
+			width: 100%
+			margin: 15px 0 10px 0
+			text-align: center
+			font-size: 28px
+			font-weight: bold
+			text-transform: uppercase
+			color: #333
+		li
+			font-size: 14px
+			&.element
+				text-align: center
+				list-style-type: none
+				font-weight: bold
+				text-transform: uppercase
+				padding: 2px 2px
+				margin: 5px
+				border-radius: 20px
+				color: #fff
+				&:nth-child(3)
+					margin-bottom: 15px
 #map-info-container.dem
 	h1
 		color: $democrats
@@ -65,6 +92,8 @@ body
 #map-info-container.rep
 	h1
 		color: $republicans
+
+
 
 //
 // Contadores
@@ -93,31 +122,7 @@ body
 		text-align: left
 		font-size: 14px
 		line-height: 1
-		font-family: 'Montserrat', 'Helvetica', 'Open Sans'
 		transition: all 0.2s
-		// &::before
-		// 	content: ''
-		// 	margin: 0 5px
-		// 	width: 20px
-		// 	height: 20px
-		// 	min-width: 20px
-		// 	min-height: 20px
-		// 	border-radius: 10px
-		// &:nth-child(1)
-		// 	&::before
-		// 		background: $democrats
-		// &:nth-child(2)
-		// 	&::before
-		// 		background: $casiDemocrats
-		// &:nth-child(3)
-		// 	&::before
-		// 		background: $medio
-		// &:nth-child(4)
-		// 	&::before
-		// 		background: $casirepublicans
-		// &:nth-child(5)
-		// 	&::before
-		// 		background: $republicans
 		&.active
 			border-width: 2px
 			transition: all 0.2
@@ -140,14 +145,6 @@ a[href^="http://maps.google.com/maps"]
 
 a[href^="https://maps.google.com/maps"]
 	display: none !important
-
-
-.gmnoprint a, .gmnoprint span, .gm-style-cc
-	display: none
-
-.gmnoprint div
-	background: none !important
-
 
 //
 // Wraper

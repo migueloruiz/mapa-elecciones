@@ -1761,10 +1761,12 @@
       {
         "name": "Florida",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
+					"Clinton ventaja de +3.8",
+					"29 Votos",
+					"Población de 19 317 568, ",
+					"El 75 % son de rasgos blancos.",
+					"Hispanos componen el 22,5% de la población.",
+					"El 16 % son de rasgos africanos."
 				],
         "points": [
           {
@@ -2120,10 +2122,12 @@
       {
         "name": "Georgia",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
+					"Trump ventaja de +5.3",
+					"16 Votos",
+					"Población de 9.363.941 ",
+					"El 58,7% son blancos (europeos o descendientes de europeos).",
+					"El 29,8% son negros.",
+					"El 7,4% hispanos (entre los que predominan los mexicanos)."
 				],
         "points": [
           {
@@ -5708,10 +5712,13 @@
       {
         "name": "Michigan",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
+					"Clinton ventaja de +11.6",
+					"16 Votos",
+					"Población: 9.328.784 habitantes",
+					"La composición étnica de Míchigan es la siguiente:",
+					"78,9% Blancos",
+					"14,0% Afroamericanos",
+					"3,3% Hispanos"
 				],
         "points": [
           {
