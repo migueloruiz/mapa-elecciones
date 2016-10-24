@@ -116,7 +116,6 @@
 		}
 		return color ;
 	}
-
 	// Ready
 	// -------------------
 	$( document ).ready(function() {
