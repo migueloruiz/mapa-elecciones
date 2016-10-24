@@ -123,7 +123,7 @@
 
 		// Se obtine el Json de Cordenadas
 		// -------------------
-		$.getJSON('../json/map-eu.json', function(data) {
+		$.getJSON('json/map-eu.json', function(data) {
 			data.states.forEach(function(state) {
 				mapStates.push(state)
 			});
