@@ -26,7 +26,7 @@ body { margin: 0; padding: 0; }
 .counter-elecciones button.active { border-width: 2px; transition: all 0.2; }
 .counter-elecciones button.active:nth-child(1) { background: #335F9A; }
 .counter-elecciones button.active:nth-child(2) { background: #3D88BB; }
-.counter-elecciones button.active:nth-child(3) { background: #FFF3D0; color: #333; }
+.counter-elecciones button.active:nth-child(3) { background: #FFF; color: #333; }
 .counter-elecciones button.active:nth-child(4) { background: #FC6258; }
 .counter-elecciones button.active:nth-child(5) { background: #D7372F; }
 

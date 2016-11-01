@@ -4,10 +4,10 @@
 	// Colores
 	const democrats = '#335F9A';
 	const casiDemocrats = '#3D88BB';
-	const medio = '#FFF3D0';
+	const medio = '#FFF';
 	const casirepublicans = '#FC6258';
 	const republicans = '#D7372F';
-	const inactivo = '#fff';
+	const inactivo = '#FFF';
 
 	var generalColor = inactivo;
 
@@ -53,6 +53,10 @@
 			statePoligon.color = colorState
 			statePoligon.data = poligonItem.data
 
+			$(statePoligon).click(function(event) {
+				console.log(event);
+			 });
+
 			google.maps.event.addListener(statePoligon,"click",function(){
 
 					if (this.fillColor != generalColor) {
@@ -61,6 +65,12 @@
 							strokeColor: generalColor,
 							fillOpacity: 1
 						});
+						var that = this;
+						setTimeout(
+							function() {
+								setTime(that)
+							}
+							, 1000);
 					}else{
 						var bounds = new google.maps.LatLngBounds()
 						this.getPath().forEach(function(element,index){
@@ -71,7 +81,7 @@
 						contentString += '<ul>';
 						contentString += '<h1>'+this.name+'</h1>';
 						this.data.forEach(function(Item, i) {
-							var styleElement = ( i == 0 || i == 1 ) ? 'class="element" style="background-color: '+ generalColor +';"' : "" ;
+							var styleElement = ( i == 0 || i == 1 ) ? 'class="element" style="background-color: '+ generalColor +'; color:'+ ((generalColor == inactivo) ? '#000' : '#fff' ) +' ;"' : "" ;
 							contentString += '<li '+ styleElement +'>'+ Item+'</li>';
 						});
 						contentString += '<ul></div>';
@@ -90,6 +100,12 @@
 
 			statePoligon.setMap(map);
 		}, this);
+	}
+
+	// Time Out
+	function setTime(poligon){
+		poligon.setOptions({fillOpacity: 0.5});
+		console.log('time out');
 	}
 
 	//Get Color
@@ -119,6 +135,7 @@
 	// Ready
 	// -------------------
 	$( document ).ready(function() {
+		$('#color-2').addClass('active');
 
 		// Se obtine el Json de Cordenadas
 		// -------------------
@@ -134,6 +151,7 @@
 			var newStateColor = getColor( this.id.substring(6) );
 			if ( $( '#' + this.id).hasClass( 'active' ) ) {
 				$('#' + this.id).removeClass('active');
+				$('#color-2').addClass('active');
 				map.setZoom(defaultZoom);
 				map.panTo(centerEUA);
 				infoWindow.close(map);
