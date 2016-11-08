@@ -76,21 +76,24 @@
 						this.getPath().forEach(function(element,index){
 							bounds.extend(element)
 						})
-
-						var contentString = '<div id="map-info-container">';
-						contentString += '<ul>';
-						contentString += '<h1>'+this.name+'</h1>';
-						this.data.forEach(function(Item, i) {
-							var styleElement = ( i == 0 || i == 1 ) ? 'class="element" style="background-color: '+ generalColor +'; color:'+ ((generalColor == inactivo) ? '#000' : '#fff' ) +' ;"' : "" ;
-							contentString += '<li '+ styleElement +'>'+ Item+'</li>';
-						});
-						contentString += '<ul></div>';
 						var centerState = bounds.getCenter();
-						infoWindow.setContent(contentString);
-						infoWindow.setPosition(centerState);
-						infoWindow.open(map);
 						map.setZoom(5);
 						map.panTo(centerState);
+						if(this.data.length > 0){
+							var contentString = '<div id="map-info-container">';
+							contentString += '<ul>';
+							contentString += '<h1>'+this.name+'</h1>';
+							this.data.forEach(function(Item, i) {
+								var styleElement = ( i == 0 || i == 1 ) ? 'class="element" style="background-color: '+ generalColor +'; color:'+ ((generalColor == inactivo) ? '#000' : '#fff' ) +' ;"' : "" ;
+								contentString += '<li '+ styleElement +'>'+ Item+'</li>';
+							});
+							contentString += '<ul></div>';
+							infoWindow.setContent(contentString);
+							infoWindow.setPosition(centerState);
+							infoWindow.open(map);
+						}else{
+							infoWindow.close(map);
+						}
 					}
 			});
 

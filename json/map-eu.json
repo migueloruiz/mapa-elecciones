@@ -3,10 +3,6 @@
       {
         "name": "Alaska",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
 				"points": [
           {
@@ -358,10 +354,6 @@
       {
         "name": "Alabama",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -453,10 +445,6 @@
       {
         "name": "Arkansas",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -696,10 +684,6 @@
       {
         "name": "Arizona",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -1047,10 +1031,6 @@
       {
         "name": "California",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
 				"rep": 40,
 				"dem": "60",
@@ -1504,10 +1484,6 @@
       {
         "name": "Colorado",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -1535,10 +1511,6 @@
       {
         "name": "Connecticut",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -1674,10 +1646,6 @@
       {
         "name": "Delaware",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -2423,10 +2391,6 @@
       {
         "name": "Hawaii",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
 				"rep": 40,
 				"dem":   60,
@@ -2556,10 +2520,6 @@
       {
         "name": "Iowa",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
 				"points": [
           {
@@ -2803,10 +2763,6 @@
       {
         "name": "Idaho",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
 				"rep": 40,
 				"dem":   60,
@@ -3308,10 +3264,6 @@
       {
         "name": "Illinois",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -3599,10 +3551,6 @@
       {
         "name": "Indiana",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -3950,10 +3898,6 @@
       {
         "name": "Kansas",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
 				"rep": 40,
 				"dem":   60,
@@ -4035,10 +3979,6 @@
       {
         "name": "Kentucky",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -4366,10 +4306,6 @@
       {
         "name": "Louisiana",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -4813,10 +4749,6 @@
       {
         "name": "Massachusetts",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -5024,10 +4956,6 @@
       {
         "name": "Maryland",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -5475,10 +5403,6 @@
       {
         "name": "Maine",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
 				"rep": 40,
 				"dem":   60,
@@ -6190,10 +6114,6 @@
       {
         "name": "Minnesota",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -6553,10 +6473,6 @@
       {
         "name": "Missouri",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -6824,10 +6740,6 @@
       {
         "name": "Mississippi",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -7171,10 +7083,6 @@
       {
         "name": "Montana",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -7410,10 +7318,6 @@
       {
         "name": "Carolina del Norte",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -7661,10 +7565,6 @@
       {
         "name": "Dakota del Norte",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -7764,10 +7664,6 @@
       {
         "name": "Nebraska",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -7947,10 +7843,6 @@
       {
         "name": "New Hampshire",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -8386,10 +8278,6 @@
       {
         "name": "New Jersey",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -8613,10 +8501,6 @@
       {
         "name": "New Mexico",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -8660,10 +8544,6 @@
       {
         "name": "Nevada",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
 
 "rep": 40,
@@ -8865,10 +8745,6 @@
       {
         "name": "New York",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -9380,10 +9256,6 @@
       {
         "name": "Ohio",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
 				"rep": 40,
 				"dem":   60,
@@ -9561,10 +9433,6 @@
       {
         "name": "Oklahoma",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -9760,10 +9628,6 @@
       {
         "name": "Oregon",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
 				"rep": 40,
 				"dem":   60,
@@ -10273,10 +10137,6 @@
       {
         "name": "Pennsylvania",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -10412,10 +10272,6 @@
       {
         "name": "Isla Rhode",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -10503,10 +10359,6 @@
       {
         "name": "Carolina del Sur",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -10722,10 +10574,6 @@
       {
         "name": "Dakota del Sur",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -10837,10 +10685,6 @@
       {
         "name": "Tennessee",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -11076,10 +10920,6 @@
       {
         "name": "Texas",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
 
 	"rep": 40,
@@ -11773,10 +11613,6 @@
       {
         "name": "Utah",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
 				"rep": 40,
 				"dem":   60,
@@ -11814,10 +11650,6 @@
       {
         "name": "Virginia",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -12433,10 +12265,6 @@
       {
         "name": "Vermont",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -12868,10 +12696,6 @@
       {
         "name": "Washington",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -13371,10 +13195,6 @@
       {
         "name": "Wisconsin",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -13642,10 +13462,6 @@
       {
         "name": "Virginia del Este",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
@@ -14033,10 +13849,6 @@
       {
         "name": "Wyoming",
 				"data":[
-					"data 1",
-					"data2",
-					"data3",
-					"data4"
 				],
         "points": [
           {
